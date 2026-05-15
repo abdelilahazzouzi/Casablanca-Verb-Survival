@@ -18,7 +18,7 @@ export const scenarios: Scenario[] = [
     correctTense: 'dodging',
     tenseName: 'present_continuous',
     failMessage: 'The cleaver bites into your shoulder because you were too slow to react.',
-    imageUrl: 'https://picsum.photos/seed/market/800/450'
+    imageUrl: 'https://images.unsplash.com/photo-1590424601130-1c05d70be712?auto=format&fit=crop&w=800&q=80' // Oranges/Market
     },
     {
     id: '2',
@@ -28,7 +28,7 @@ export const scenarios: Scenario[] = [
     correctTense: 'climbed',
     tenseName: 'past_simple',
     failMessage: 'The dogs surround you. You forgot the wall you climbed before, and now it\'s too late.',
-    imageUrl: 'https://picsum.photos/seed/alley/800/450'      
+    imageUrl: 'https://images.unsplash.com/photo-1549448858-69279093b794?auto=format&fit=crop&w=800&q=80' // Narrow alley
     },
     {
     id: '3',
@@ -38,7 +38,7 @@ export const scenarios: Scenario[] = [
     correctTense: 'have lost',
     tenseName: 'present_perfect',
     failMessage: 'The guide laughs at your empty pockets. You realize you still haven\'t found what you lost.',
-    imageUrl: 'https://picsum.photos/seed/wallet/800/450'      
+    imageUrl: 'https://images.unsplash.com/photo-1627521183180-8b010b991340?auto=format&fit=crop&w=800&q=80' // Wallet/Money
     },
     {
     id: '4',
@@ -48,7 +48,7 @@ export const scenarios: Scenario[] = [
     correctTense: 'drink',
     tenseName: 'present_simple',
     failMessage: 'Your hesitation was obvious. Tourists don\'t think about their morning tea.',
-    imageUrl: 'https://picsum.photos/seed/tea/800/450'   
+    imageUrl: 'https://images.unsplash.com/photo-1563229653-61b65e71bc23?auto=format&fit=crop&w=800&q=80' // Mint tea
     },
     {
     id: '5',
@@ -58,7 +58,7 @@ export const scenarios: Scenario[] = [
     correctTense: 'jumping',
     tenseName: 'present_continuous',
     failMessage: 'The tram doesn\'t stop. You froze when you should have been jumping.',
-    imageUrl: 'https://picsum.photos/seed/tram/800/450'   
+    imageUrl: 'https://images.unsplash.com/photo-1555006951-e1792bc491cc?auto=format&fit=crop&w=800&q=80' // Tram
     },
     {
     id: '6',
@@ -68,7 +68,7 @@ export const scenarios: Scenario[] = [
     correctTense: 'negotiate',
     tenseName: 'present_simple',
     failMessage: 'You paid triple the normal fare. Your wallet is crying.',
-    imageUrl: 'https://picsum.photos/seed/taxi/800/450'      
+    imageUrl: 'https://images.unsplash.com/photo-1610492815610-d79040058e57?auto=format&fit=crop&w=800&q=80' // Red taxi
     },
     {
     id: '7',
@@ -78,7 +78,7 @@ export const scenarios: Scenario[] = [
     correctTense: 'have been wandering',
     tenseName: 'present_perfect_continuous',
     failMessage: 'Night falls. The Medina is much scarier when you are lost in the dark.',
-    imageUrl: 'https://picsum.photos/seed/medina/800/450'      
+    imageUrl: 'https://images.unsplash.com/photo-1548013146-72479768bbaa?auto=format&fit=crop&w=800&q=80' // Medina entrance
     },
     {
     id: '8',
@@ -88,7 +88,7 @@ export const scenarios: Scenario[] = [
     correctTense: 'ate',
     tenseName: 'past_simple',
     failMessage: 'Your stomach gurgles in protest. Maybe one snail would have been enough.',
-    imageUrl: 'https://picsum.photos/seed/snails/800/450'      
+    imageUrl: 'https://images.unsplash.com/photo-1559844410-637a7f772e39?auto=format&fit=crop&w=800&q=80' // Street food/Snails
     },
     {
     id: '9',
@@ -98,7 +98,7 @@ export const scenarios: Scenario[] = [
     correctTense: 'sweating',
     tenseName: 'present_continuous',
     failMessage: 'The heat overwhelmed you. You should have stayed hydrated.',
-    imageUrl: 'https://picsum.photos/seed/hammam/800/450'      
+    imageUrl: 'https://images.unsplash.com/photo-1582232593922-0e9e49d63f06?auto=format&fit=crop&w=800&q=80' // Steam/Spa/Hammam
     },
     {
     id: '10',
@@ -108,6 +108,6 @@ export const scenarios: Scenario[] = [
     correctTense: 'had given',
     tenseName: 'past_perfect',
     failMessage: 'You are spending the night on a sofa in the courtyard. Book in advance next time.',
-    imageUrl: 'https://picsum.photos/seed/riad/800/450'   
+    imageUrl: 'https://images.unsplash.com/photo-1533154683836-84ea7a0bc310?auto=format&fit=crop&w=800&q=80' // Riad courtyard
     }
     ];
