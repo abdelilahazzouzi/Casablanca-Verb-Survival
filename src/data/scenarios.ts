@@ -6,6 +6,7 @@ export interface Scenario {
   correctTense: string;
   tenseName: string;
   failMessage: string;
+  imageUrl: string;
 }
 
 export const scenarios: Scenario[] = [
@@ -16,7 +17,8 @@ export const scenarios: Scenario[] = [
     baseVerb: 'dodge',
     correctTense: 'dodging',
     tenseName: 'present_continuous',
-    failMessage: 'The cleaver bites into your shoulder because you were too slow to react.'
+    failMessage: 'The cleaver bites into your shoulder because you were too slow to react.',
+    imageUrl: 'https://images.unsplash.com/photo-1595111101533-333e6022e03f?auto=format&fit=crop&w=800&q=80'
   },
   {
     id: '2',
@@ -25,7 +27,8 @@ export const scenarios: Scenario[] = [
     baseVerb: 'climb',
     correctTense: 'climbed',
     tenseName: 'past_simple',
-    failMessage: 'The dogs surround you. You forgot the wall you climbed before, and now it\'s too late.'
+    failMessage: 'The dogs surround you. You forgot the wall you climbed before, and now it\'s too late.',
+    imageUrl: 'https://images.unsplash.com/photo-1544921604-e35688d01150?auto=format&fit=crop&w=800&q=80'
   },
   {
     id: '3',
@@ -34,7 +37,8 @@ export const scenarios: Scenario[] = [
     baseVerb: 'lose',
     correctTense: 'have lost',
     tenseName: 'present_perfect',
-    failMessage: 'The guide laughs at your empty pockets. You realize you still haven\'t found what you lost.'
+    failMessage: 'The guide laughs at your empty pockets. You realize you still haven\'t found what you lost.',
+    imageUrl: 'https://images.unsplash.com/photo-1621415263481-48c89f302971?auto=format&fit=crop&w=800&q=80'
   },
   {
     id: '4',
@@ -43,7 +47,8 @@ export const scenarios: Scenario[] = [
     baseVerb: 'drink',
     correctTense: 'drink',
     tenseName: 'present_simple',
-    failMessage: 'Your hesitation was obvious. Tourists don\'t think about their morning tea.'
+    failMessage: 'Your hesitation was obvious. Tourists don\'t think about their morning tea.',
+    imageUrl: 'https://images.unsplash.com/photo-1576092768241-dec231879fc3?auto=format&fit=crop&w=800&q=80'
   },
   {
     id: '5',
@@ -52,6 +57,57 @@ export const scenarios: Scenario[] = [
     baseVerb: 'jump',
     correctTense: 'jumping',
     tenseName: 'present_continuous',
-    failMessage: 'The tram doesn\'t stop. You froze when you should have been jumping.'
+    failMessage: 'The tram doesn\'t stop. You froze when you should have been jumping.',
+    imageUrl: 'https://images.unsplash.com/photo-1628191139360-408a2a0a256d?auto=format&fit=crop&w=800&q=80'
+  },
+  {
+    id: '6',
+    status: 'You flag down a red Petit Taxi on a rainy afternoon near Twin Center. The driver says the meter is "broken" and quotes you a ridiculous price to Ain Diab.',
+    actionPrompt: 'You (negotiate) for a better price before getting in.',
+    baseVerb: 'negotiate',
+    correctTense: 'negotiate',
+    tenseName: 'present_simple',
+    failMessage: 'You paid triple the normal fare. Your wallet is crying.',
+    imageUrl: 'https://images.unsplash.com/photo-1549194382-346a85f06123?auto=format&fit=crop&w=800&q=80'
+  },
+  {
+    id: '7',
+    status: 'You are deep in the labyrinth of the Ancienne Medina. The sun is setting, and you realize you have been walking in circles for twenty minutes.',
+    actionPrompt: 'What have you been doing for the last twenty minutes?',
+    baseVerb: 'wander',
+    correctTense: 'have been wandering',
+    tenseName: 'present_perfect_continuous',
+    failMessage: 'Night falls. The Medina is much scarier when you are lost in the dark.',
+    imageUrl: 'https://images.unsplash.com/photo-1539667468225-eebb663053e6?auto=format&fit=crop&w=800&q=80'
+  },
+  {
+    id: '8',
+    status: 'A street vendor offers you a steaming bowl of spicy snails (Babbouche). You want to prove you are not a typical tourist.',
+    actionPrompt: 'You (eat) the entire bowl yesterday to impress your friends.',
+    baseVerb: 'eat',
+    correctTense: 'ate',
+    tenseName: 'past_simple',
+    failMessage: 'Your stomach gurgles in protest. Maybe one snail would have been enough.',
+    imageUrl: 'https://images.unsplash.com/photo-1603532648955-039310d9ed75?auto=format&fit=crop&w=800&q=80'
+  },
+  {
+    id: '9',
+    status: 'You are inside a traditional Hammam. The heat is intense, and the "Kessal" (masseur) is ready to scrub your skin off with a black glove.',
+    actionPrompt: 'What are you doing as the steam fills the room?',
+    baseVerb: 'sweat',
+    correctTense: 'sweating',
+    tenseName: 'present_continuous',
+    failMessage: 'The heat overwhelmed you. You should have stayed hydrated.',
+    imageUrl: 'https://images.unsplash.com/photo-1544161515-4ae6ce6db874?auto=format&fit=crop&w=800&q=80'
+  },
+  {
+    id: '10',
+    status: 'You finally reach your Riad, but the receptionist tells you they have no record of your booking.',
+    actionPrompt: 'By the time you arrived, they (give) your room to someone else.',
+    baseVerb: 'give',
+    correctTense: 'had given',
+    tenseName: 'past_perfect',
+    failMessage: 'You are spending the night on a sofa in the courtyard. Book in advance next time.',
+    imageUrl: 'https://images.unsplash.com/photo-1539635278303-d4002c07eae3?auto=format&fit=crop&w=800&q=80'
   }
 ];

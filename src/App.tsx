@@ -101,6 +101,13 @@ const App: React.FC = () => {
       </div>
       
       <div className="narrative-area">
+        {currentScenario.imageUrl && (
+          <img 
+            src={currentScenario.imageUrl} 
+            alt="Scenario background" 
+            className="scenario-image" 
+          />
+        )}
         <div className="status-text">{currentScenario.status}</div>
         <div className="action-prompt">
           {currentScenario.actionPrompt} ({currentScenario.baseVerb})
