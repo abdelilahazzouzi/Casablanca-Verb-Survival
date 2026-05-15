@@ -18,7 +18,7 @@ export const scenarios: Scenario[] = [
     correctTense: 'dodging',
     tenseName: 'present_continuous',
     failMessage: 'The cleaver bites into your shoulder because you were too slow to react.',
-    imageUrl: 'https://loremflickr.com/800/450/casablanca,market'
+    imageUrl: 'https://loremflickr.com/800/450/casablanca,market?lock=1'
     },
     {
     id: '2',
@@ -28,7 +28,7 @@ export const scenarios: Scenario[] = [
     correctTense: 'climbed',
     tenseName: 'past_simple',
     failMessage: 'The dogs surround you. You forgot the wall you climbed before, and now it\'s too late.',
-    imageUrl: 'https://loremflickr.com/800/450/alley,dog'      
+    imageUrl: 'https://loremflickr.com/800/450/alley,dog?lock=2'      
     },
     {
     id: '3',
@@ -38,7 +38,7 @@ export const scenarios: Scenario[] = [
     correctTense: 'have lost',
     tenseName: 'present_perfect',
     failMessage: 'The guide laughs at your empty pockets. You realize you still haven\'t found what you lost.',
-    imageUrl: 'https://loremflickr.com/800/450/wallet,money'      
+    imageUrl: 'https://loremflickr.com/800/450/wallet,money?lock=3'      
     },
     {
     id: '4',
@@ -48,7 +48,7 @@ export const scenarios: Scenario[] = [
     correctTense: 'drink',
     tenseName: 'present_simple',
     failMessage: 'Your hesitation was obvious. Tourists don\'t think about their morning tea.',
-    imageUrl: 'https://loremflickr.com/800/450/morocco,tea'   
+    imageUrl: 'https://loremflickr.com/800/450/morocco,tea?lock=4'   
     },
     {
     id: '5',
@@ -58,7 +58,7 @@ export const scenarios: Scenario[] = [
     correctTense: 'jumping',
     tenseName: 'present_continuous',
     failMessage: 'The tram doesn\'t stop. You froze when you should have been jumping.',
-    imageUrl: 'https://loremflickr.com/800/450/tram'   
+    imageUrl: 'https://loremflickr.com/800/450/tram?lock=5'   
     },
     {
     id: '6',
@@ -68,7 +68,7 @@ export const scenarios: Scenario[] = [
     correctTense: 'negotiate',
     tenseName: 'present_simple',
     failMessage: 'You paid triple the normal fare. Your wallet is crying.',
-    imageUrl: 'https://loremflickr.com/800/450/taxi,morocco'      
+    imageUrl: 'https://loremflickr.com/800/450/taxi,morocco?lock=6'      
     },
     {
     id: '7',
@@ -78,7 +78,7 @@ export const scenarios: Scenario[] = [
     correctTense: 'have been wandering',
     tenseName: 'present_perfect_continuous',
     failMessage: 'Night falls. The Medina is much scarier when you are lost in the dark.',
-    imageUrl: 'https://loremflickr.com/800/450/medina,morocco'      
+    imageUrl: 'https://loremflickr.com/800/450/medina,morocco?lock=7'      
     },
     {
     id: '8',
@@ -88,7 +88,7 @@ export const scenarios: Scenario[] = [
     correctTense: 'ate',
     tenseName: 'past_simple',
     failMessage: 'Your stomach gurgles in protest. Maybe one snail would have been enough.',
-    imageUrl: 'https://loremflickr.com/800/450/moroccan,food'      
+    imageUrl: 'https://loremflickr.com/800/450/moroccan,food?lock=8'      
     },
     {
     id: '9',
@@ -98,7 +98,7 @@ export const scenarios: Scenario[] = [
     correctTense: 'sweating',
     tenseName: 'present_continuous',
     failMessage: 'The heat overwhelmed you. You should have stayed hydrated.',
-    imageUrl: 'https://loremflickr.com/800/450/hammam,steam'      
+    imageUrl: 'https://loremflickr.com/800/450/hammam,steam?lock=9'      
     },
     {
     id: '10',
@@ -108,6 +108,6 @@ export const scenarios: Scenario[] = [
     correctTense: 'had given',
     tenseName: 'past_perfect',
     failMessage: 'You are spending the night on a sofa in the courtyard. Book in advance next time.',
-    imageUrl: 'https://loremflickr.com/800/450/riad,morocco'   
+    imageUrl: 'https://loremflickr.com/800/450/riad,morocco?lock=10'   
     }
 ];
