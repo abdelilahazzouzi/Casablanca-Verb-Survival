@@ -107,7 +107,7 @@ const App: React.FC = () => {
             src={currentScenario.imageUrl} 
             alt="Scenario background" 
             className="scenario-image" 
-            referrerPolicy="no-referrer"
+            loading="lazy"
           />
         )}
         <div className="status-text">{currentScenario.status}</div>
