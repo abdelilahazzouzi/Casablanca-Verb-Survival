@@ -98,6 +98,7 @@ const App: React.FC = () => {
       <div className="status-header">
         <span className="lives">Lives: {state.lives}</span>
         <span className="score">Score: {state.score}</span>
+        <span style={{ fontSize: '0.6rem', opacity: 0.3 }}>v1.1</span>
       </div>
       
       <div className="narrative-area">
