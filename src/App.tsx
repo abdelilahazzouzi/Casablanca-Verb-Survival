@@ -65,6 +65,14 @@ const App: React.FC = () => {
   const [inputValue, setInputValue] = useState('');
   const currentScenario = scenarios[state.currentScenarioIndex];
 
+  // Pre-load all images on mount
+  useEffect(() => {
+    scenarios.forEach((scenario) => {
+      const img = new Image();
+      img.src = scenario.imageUrl;
+    });
+  }, []);
+
   useEffect(() => {
     if (state.shake) {
       const timer = setTimeout(() => dispatch({ type: 'CLEAR_SHAKE' }), 200);
