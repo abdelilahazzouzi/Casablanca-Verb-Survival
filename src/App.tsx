@@ -8,6 +8,7 @@ interface GameState {
   currentScenarioIndex: number;
   feedback: string;
   isGameOver: boolean;
+  isVictory: boolean;
   shake: boolean;
 }
 
@@ -22,6 +23,7 @@ const initialState: GameState = {
   currentScenarioIndex: 0,
   feedback: '',
   isGameOver: false,
+  isVictory: false,
   shake: false,
 };
 
@@ -29,12 +31,15 @@ function reducer(state: GameState, action: Action): GameState {
   switch (action.type) {
     case 'SUBMIT_ANSWER':
       if (action.isCorrect) {
+        const nextIndex = state.currentScenarioIndex + 1;
+        const victory = nextIndex >= scenarios.length;
         return {
           ...state,
           score: state.score + 1,
-          currentScenarioIndex: (state.currentScenarioIndex + 1) % scenarios.length,
+          currentScenarioIndex: victory ? state.currentScenarioIndex : nextIndex,
           feedback: '',
           shake: false,
+          isVictory: victory,
         };
       } else {
         const newLives = state.lives - 1;
@@ -88,6 +93,19 @@ const App: React.FC = () => {
         <p className="feedback fail">{state.feedback}</p>
         <button className="restart-button" onClick={() => dispatch({ type: 'RESTART' })}>
           TRY AGAIN
+        </button>
+      </div>
+    );
+  }
+
+  if (state.isVictory) {
+    return (
+      <div className="game-container victory">
+        <h2 style={{ color: '#4CAF50' }}>MISSION ACCOMPLISHED</h2>
+        <p>You mastered the streets of Casablanca.</p>
+        <p>Final Score: {state.score}</p>
+        <button className="restart-button" style={{ backgroundColor: '#4CAF50' }} onClick={() => dispatch({ type: 'RESTART' })}>
+          PLAY AGAIN
         </button>
       </div>
     );
